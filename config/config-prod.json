@@ -1,0 +1,13 @@
+{
+  "url": "http://test.jlongster.com",
+  "http": {
+    "port": 4000
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379
+  },
+  "twitter": {
+  },
+  "admins": ["jlongster"]
+}

@@ -1,0 +1,108 @@
+@bgcolor: #f0f0f0;
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, main {
+    background-color: @bgcolor;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+main {
+    background-color: @bgcolor;
+    margin-left: 256px;
+    padding: 15px 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.year-label {
+    text-align: center;
+}
+
+.mui-left-nav .mui-menu-item:nth-of-type(3) {
+    margin-top: 1em;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+}
+
+table thead {
+    background-color: #909090;
+    color: white;
+}
+
+table td, table th {
+    padding: 0 .5em;
+}
+
+table tbody tr:nth-of-type(2n) {
+    background-color: #e0e0e0;
+}
+
+table td:first-of-type, table th:first-of-type {
+    padding-left: 1em;
+}
+
+table tbody tr:hover {
+   background-color: white;
+}
+
+.scrollable-table {
+    width: 100%;
+    overflow: auto;
+}
+
+.transaction-table {
+    tr.editing {
+        background-color: #00BCD4;
+    }
+
+    tbody td:first-of-type {
+        width: 500px;
+    }
+}
+
+.transactions {
+    .month-buttons {
+        margin-bottom: 1em;
+        display: flex;
+    }
+
+    .month-buttons .mui-flat-button,
+    .month-buttons .mui-raised-button {
+        margin: 0 .25em;
+        flex: 1;
+    }
+
+    .month-buttons .mui-flat-button {
+        min-width: auto;
+    }
+
+    .month-buttons .nav {
+        flex: 0;
+    }
+
+    .total {
+        margin-top: 1em;
+        text-align: right;
+    }
+}
+
+.budget {
+    table {
+        margin-bottom: .5em;
+    }
+
+    table td, table th {
+        padding: 0 .75em;
+    }
+}
