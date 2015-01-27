@@ -54,7 +54,7 @@ const TransactionStore = Marty.createStore({
   },
 
   getTransactions: function(month, year) {
-    if(month && year) {
+    if(month != null && year != null) {
       return this.state.transactionsByDate[this._dateKey(month, year)] || [];
     }
     return this.state.transactions;
